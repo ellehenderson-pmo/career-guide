@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Career Paths for Project Professionals</title>
+<meta name="description" content="A practical guide to project and program management roles, career levels, adjacent career paths, and using AI as a thinking partner." />
+<style>
+:root{
+  --bg:#f6f7fb;--card:#fff;--ink:#202431;--muted:#667085;--line:#e5e7ef;
+  --purple:#6d5dfc;--purple2:#8c7cff;--teal:#159c92;--soft:#f1efff;--soft2:#eaf8f6;
+  --nav:#ffffffee;--dark:#151924;--shadow:0 10px 28px rgba(29,33,45,.07);--r:20px;--max:1180px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.52}
+.wrap{max-width:var(--max);margin:auto;padding:0 24px}
+.hero{padding:72px 0 46px;background:radial-gradient(circle at 15% 10%,rgba(109,93,252,.14),transparent 34%),radial-gradient(circle at 90% 10%,rgba(21,156,146,.1),transparent 26%),#fbfbfe;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;font-weight:800;color:var(--purple);display:inline-block;margin-bottom:12px}
+h1{font-size:clamp(2.5rem,5vw,4.8rem);line-height:1.02;letter-spacing:-.045em;margin:0;max-width:1000px}
+.sub{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--muted);max-width:900px;margin:20px 0 0}
+.callout{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;max-width:900px;box-shadow:var(--shadow)}
+.heroactions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px}.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;border-radius:999px;padding:12px 18px;background:var(--purple);color:#fff;box-shadow:var(--shadow)}.button:hover{background:#5848ea}button.button{border:0;cursor:pointer;font:inherit;font-weight:800}button.button:disabled{opacity:.6;cursor:default}.actionnote{color:var(--muted);font-size:.92rem}
+nav{position:sticky;top:0;z-index:10;background:var(--nav);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.navtitle{font-weight:800;font-size:.95rem}.links{display:flex;gap:8px;flex-wrap:wrap}.links a{text-decoration:none;color:var(--muted);padding:8px 11px;border-radius:999px;font-size:.88rem}.links a:hover{background:#f0f2f6;color:var(--ink)}
+section{padding:64px 0}
+.head{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:end;margin-bottom:28px}
+.head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;letter-spacing:-.03em;margin:0}.head p{margin:0;color:var(--muted);font-size:1.05rem}
+.panel,.card,.role,.level{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.panel{padding:24px}
+.core{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.core div{padding:16px;border-radius:14px;background:#fafaff;border:1px solid #eceafb}
+.core strong{display:block;margin-bottom:4px}.core span{font-size:.9rem;color:var(--muted)}
+.compare{overflow:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:880px}
+th,td{text-align:left;vertical-align:top;padding:16px;border-bottom:1px solid var(--line)}
+th{background:#f7f8fc;font-size:.83rem;text-transform:uppercase;letter-spacing:.05em;color:#596170}
+td:first-child{font-weight:800;width:18%}
+tr:last-child td{border-bottom:0}
+.kicker{color:var(--purple);font-weight:800}
+.levels{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.level{padding:18px}
+.level h3{margin:0 0 4px;font-size:1.02rem}.level .name{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+.level ul{padding-left:18px;margin:0;color:var(--muted);font-size:.9rem}.level li{margin:7px 0}
+.programlevels{grid-template-columns:repeat(4,1fr)}
+.capgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{padding:20px}.card h3{margin:0 0 8px;font-size:1.06rem}.card p{margin:0;color:var(--muted)}
+.adjacent{background:#fff}
+.rolegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.role{padding:20px}
+.roletop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.role h3{margin:0;font-size:1.05rem}
+.tag{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;background:#f1f3f7;color:#5d6675;border-radius:999px;padding:6px 9px;white-space:nowrap}
+.role p{margin:8px 0 0;color:var(--muted)}
+.role .match{margin-top:12px;font-size:.88rem;padding-top:12px;border-top:1px solid var(--line)}
+.fitmap{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.fit{background:var(--soft2);border:1px solid #cfe9e5;border-radius:18px;padding:19px}.fit h3{margin:0 0 8px;font-size:1rem}.fit ul{margin:0;padding-left:18px;color:#41605d}
+.ai{background:var(--dark);color:#fff}
+.ai .head p{color:#bcc4d1}.aigrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.aicard{background:#1c2230;border:1px solid #2d3547;border-radius:18px;padding:20px}.aicard h3{margin:0 0 8px}.aicard p{margin:0;color:#cbd2dc}
+.formula{margin-top:18px;background:linear-gradient(135deg,var(--purple),var(--purple2));border-radius:20px;padding:22px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.step{text-align:center;background:#ffffff19;border:1px solid #ffffff35;padding:12px;border-radius:12px;font-weight:800}
+.prompt{background:#10131b;border-radius:14px;padding:16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;font-size:.9rem}
+.closing{text-align:center;padding:60px 0 74px}.closing h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.03em;line-height:1.08;margin:0 auto 14px;max-width:900px}.closing p{max-width:800px;margin:auto;color:var(--muted)}.bridge{margin:30px auto 0;max-width:900px;text-align:left}.bridge h3{margin:0 0 8px}.bridge p{max-width:none;margin:0}
+footer{border-top:1px solid var(--line);padding:26px 0 38px;color:var(--muted);font-size:.88rem}
+.aigrid.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:980px){.aigrid.two{grid-template-columns:1fr}.core{grid-template-columns:repeat(2,1fr)}.levels,.programlevels{grid-template-columns:repeat(2,1fr)}.capgrid,.aigrid,.fitmap{grid-template-columns:1fr}.rolegrid{grid-template-columns:1fr}.head{grid-template-columns:1fr}}
+@media(max-width:980px){.core[style]{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:620px){.core[style]{grid-template-columns:1fr!important}.wrap{padding:0 17px}.hero{padding-top:52px}.core,.levels,.programlevels{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.navtitle{display:none}.links{justify-content:flex-start}}
+@media print{nav{display:none}.panel,.card,.role,.level,.compare{box-shadow:none}section{padding:34px 0}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">A practical career guide for project professionals</span>
+    <h1>Understand the work.<br>Then decide where your skills can take you.</h1>
+    <p class="sub">Project management is more than timelines and task tracking. Strong project professionals build judgment, influence, risk management, communication, systems thinking, and execution skills that transfer across many business functions.</p>
+    <div class="callout"><strong>Use this guide to answer four questions:</strong> What does project vs. program management actually require? How do expectations change as you become more senior? What other roles use the same capabilities? How can AI help you apply those capabilities more effectively in your work?</div>
+
+    <div class="heroactions">
+      <a class="button" href="career-paths-for-project-professionals.pdf" download>Download the quick guide (PDF)</a>
+      <span class="actionnote">Prefer a concise, print-friendly version? Take the guide with you.</span>
+    </div>
+    <div class="panel" style="margin-top:18px;max-width:900px;background:#ffffff;border-color:#e5e7ef">
+      <h3 style="margin:0 0 10px">How to use this guide</h3>
+      <ul style="margin:0;padding-left:20px;color:var(--muted)">
+        <li>Start with <strong>Project vs. Program</strong> to understand the work.</li>
+        <li>Review the <strong>career levels</strong> and notice how scope, complexity, independence, and influence increase.</li>
+        <li>Explore <strong>adjacent roles</strong> based on the skills and type of work you enjoy.</li>
+        <li>Use the <strong>AI section</strong> to organize information, strengthen plans and decisions, prepare for stakeholders, communicate clearly, and learn faster.</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <div class="navtitle">Career Paths for Project Professionals</div>
+    <div class="links">
+      <a href="#roles">PM vs. Program</a>
+      <a href="#levels">Career Levels</a>
+      <a href="#skills">Core Capabilities</a>
+      <a href="#adjacent">Adjacent Roles</a>
+      <a href="#ai">Using AI</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section id="roles">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">1 · Know the difference</span><h2>Project Manager vs. Program Manager</h2></div>
+      <p>They use many of the same skills, but the distinction is not how many things they manage. A Project Manager may own several projects at once; a Program Manager may own several programs. The difference is what they are accountable for, how the work connects, and how success is measured.</p>
+    </div>
+
+    <div class="compare">
+      <table>
+        <thead><tr><th>Dimension</th><th>Project Manager</th><th>Program Manager</th></tr></thead>
+        <tbody>
+          <tr><td>Primary focus</td><td><span class="kicker">Deliver a defined project outcome and create value.</span><br>Lead one or more projects, each undertaken to create a unique product, service, capability, or result, while balancing scope, schedule, resources, quality, risks, stakeholders, and changing conditions.</td><td><span class="kicker">Coordinate related work to realize broader benefits.</span><br>Lead one or more programs that intentionally coordinate related projects, workstreams, and other activities so they collectively achieve benefits and outcomes that would not be available if managed independently. In plain language: the coordinated work creates more value together than the projects would create separately.</td></tr>
+          <tr><td>Scope</td><td>May manage several projects at the same time, sometimes 5 to 7, depending on size, complexity, and organizational context. Each project still has its own defined objective, scope, plan, stakeholders, risks, and delivery accountability.</td><td>May manage several programs at the same time, sometimes 3 to 5, depending on size, complexity, and organizational context. Each program integrates multiple related projects, teams, dependencies, and changes around a shared strategic outcome.</td></tr>
+          <tr><td>Measures of success</td><td>Each project delivers value that is worth the effort and expense and accomplishes the desired outcomes for stakeholders. Scope, schedule, cost, quality, risk, and adoption still matter, but they are not the only measures of project success. Managing several projects also requires intentionally prioritizing attention and capacity across them.</td><td>The related work across each program collectively produces the intended benefits and strategic outcomes, not simply that each component project finished. The Program Manager coordinates, monitors, and protects benefits realization, while sponsors and business owners may share accountability for realizing and sustaining those benefits.</td></tr>
+          <tr><td>Core work</td><td>Connect the project to its intended value, plan and drive delivery, manage scope and schedule, facilitate teams, manage stakeholders and risk, enable decisions, adapt when conditions change, and balance priorities across multiple concurrent projects.</td><td>Define program governance (how decisions, ownership, and oversight work), integrate component work, manage interdependencies, align senior stakeholders, resolve cross-project tradeoffs, monitor benefits and outcomes (whether the intended business improvement is actually happening), adapt the program as conditions change, and balance priorities across multiple programs.</td></tr>
+          <tr><td>Stakeholders</td><td>Project team, functional leads, sponsor, and direct cross-functional partners.</td><td>Project leaders, functional executives, sponsors, steering groups, and often senior leadership across the organization.</td></tr>
+          <tr><td>Decision lens</td><td>“What needs to happen for each project to deliver the intended outcome and value, and where should I focus attention across the projects I own?”</td><td>“Are these related efforts being coordinated in a way that produces benefits and outcomes we could not achieve by managing them separately?”</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel" style="margin-top:18px;background:var(--soft);border-color:#ddd8ff">
+      <h3 style="margin:0 0 8px">The simplest distinction: project count does not define the role</h3>
+      <p style="margin:0;color:var(--muted)">
+        A Project Manager with seven projects does not automatically become a Program Manager. If those projects have separate objectives and are managed as distinct projects, that is still project management. Program management begins when related projects and other work need to be intentionally coordinated so the organization can achieve benefits or outcomes that would not be available by managing each project independently.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="levels">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">2 · Understand growth</span><h2>Seniority is about scope and judgment, not just years of experience</h2></div>
+      <p>As responsibility grows, the work shifts from completing assigned tasks to independently leading more complex execution. Seniority reflects the scale, ambiguity, strategic importance, stakeholder complexity, and judgment required, not simply the number of projects or programs assigned.</p>
+    </div>
+
+    <div class="panel" style="margin-bottom:18px;background:#fff;border-color:#e5e7ef">
+      <p style="margin:0;color:var(--muted)"><strong>Important:</strong> Titles and levels vary by company. Focus less on the exact title and more on the progression in <strong>scope, complexity, autonomy, judgment, and influence</strong>.</p>
+    </div>
+
+    <h3 style="margin:0 0 14px">Project Management Track</h3>
+    <div class="levels">
+      <div class="level"><div class="name">Project Coordinator</div><ul><li>Supports discrete tasks and project hygiene</li><li>Works mainly with the immediate team</li><li>Requires significant guidance</li><li>Focuses on reliable execution</li></ul></div>
+      <div class="level"><div class="name">Project Manager</div><ul><li>Owns well-defined projects from definition through delivery</li><li>Connects delivery to intended stakeholder value (what customers, teams, sponsors, or the business actually gain) and outcomes</li><li>Coordinates cross-functional teams and manages risk</li><li>Works with moderate guidance</li></ul></div>
+      <div class="level"><div class="name">Senior Project Manager</div><ul><li>Leads complex multi-workstream projects</li><li>Influences project direction</li><li>Builds consensus without authority</li><li>Handles complex tradeoffs independently</li></ul></div>
+      <div class="level"><div class="name">Lead Project Manager</div><ul><li>Leads high-visibility, ambiguous work</li><li>Operates across multiple business areas</li><li>Partners with Directors and VPs</li><li>Shapes the execution approach for strategic work</li></ul></div>
+      <div class="level"><div class="name">Principal Project Manager</div><ul><li>Improves execution at a systemic level</li><li>Advises senior leaders</li><li>Sets standards and scales best practices</li><li>Influences a portfolio of interconnected work</li></ul></div>
+    </div>
+
+    <h3 style="margin:34px 0 14px">Program Management Track</h3>
+    <div class="levels programlevels">
+      <div class="level"><div class="name">Associate Program Manager</div><ul><li>Manages a small program or major workstream</li><li>Coordinates project components</li><li>Resolves tactical cross-project issues</li><li>Builds program-management fundamentals</li></ul></div>
+      <div class="level"><div class="name">Program Manager</div><ul><li>Owns coordination of a defined program toward intended benefits</li><li>Manages interdependencies and governance across related work</li><li>Aligns department-level stakeholders and sponsors</li><li>Adapts the program to protect benefits and business outcomes</li></ul></div>
+      <div class="level"><div class="name">Lead Program Manager</div><ul><li>Leads complex, ambiguous strategic programs</li><li>Navigates high-impact tradeoffs</li><li>Works directly with Directors and VPs</li><li>Shapes how strategic goals are translated into execution</li></ul></div>
+      <div class="level"><div class="name">Principal Program Manager</div><ul><li>Directs a portfolio of programs</li><li>Advises executive leadership</li><li>Makes prioritization and investment tradeoffs</li><li>Builds organizational capability for strategic execution</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">3 · Know what you are actually building</span><h2>The capabilities underneath the title</h2></div>
+      <p>These are the skills that make project professionals valuable, and the reason the career options extend far beyond PMO roles.</p>
+    </div>
+    <div class="capgrid">
+      <div class="card"><h3>Planning & Execution</h3><p>Turn goals into structured work: scope, milestones, sequencing, ownership, dependencies, and follow-through.</p></div>
+      <div class="card"><h3>Risk & Problem Solving</h3><p>See what could go wrong, assess impact, build mitigation plans, escalate early, and help teams work through ambiguity.</p></div>
+      <div class="card"><h3>Stakeholder Leadership</h3><p>Build alignment across people with different priorities, often without direct authority.</p></div>
+      <div class="card"><h3>Decision Enablement</h3><p>Frame tradeoffs clearly, surface the right information, and help leaders make timely decisions.</p></div>
+      <div class="card"><h3>Communication</h3><p>Translate complexity into the right level of detail for teams, sponsors, and executives.</p></div>
+      <div class="card"><h3>Systems Thinking</h3><p>Understand how teams, processes, technology, incentives, and dependencies interact, not just the task in front of you.</p></div>
+      <div class="card"><h3>Value & Business Acumen</h3><p>Connect project outputs to stakeholder value (what customers, teams, sponsors, or the business actually gain) and desired business outcomes instead of treating delivery against scope, schedule, and budget as the end goal.</p></div>
+      <div class="card"><h3>Change & Adoption</h3><p>Recognize that delivery is not complete until people can use, adopt, and sustain the new capability.</p></div>
+      <div class="card"><h3>Governance & Accountability</h3><p>Create enough structure to clarify ownership, surface problems, maintain standards, and keep work moving without adding process for its own sake.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="panel" style="background:#fbfbfe">
+      <span class="eyebrow">A few terms in plain English</span>
+      <div class="core" style="grid-template-columns:repeat(4,1fr)">
+        <div><strong>Benefits realization</strong><span>Whether the intended business improvement actually happens.</span></div>
+        <div><strong>Governance</strong><span>How decisions, ownership, escalation, and oversight work.</span></div>
+        <div><strong>Interdependency</strong><span>Work in one project that affects another project or outcome.</span></div>
+        <div><strong>Stakeholder value</strong><span>What customers, teams, sponsors, or the business actually gain.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adjacent" class="adjacent">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow">4 · Look beyond the title</span><h2>Roles outside Project & Program Management that use the same skills</h2></div>
+      <p>Job titles vary dramatically across companies. Search for the kind of work you want to do, not only the title you already know.</p>
+    </div>
+
+    <div class="rolegrid">
+      <div class="role"><div class="roletop"><h3>Operations Manager</h3><span class="tag">Execution + Process</span></div><p>Runs and improves day-to-day operations, capacity, workflows, metrics, and accountability.</p><div class="match"><strong>PM overlap:</strong> planning, issue resolution, process design, metrics, cross-functional coordination.</div></div>
+      <div class="role"><div class="roletop"><h3>Business Operations</h3><span class="tag">Cross-functional</span></div><p>Solves business problems that cut across teams and often owns special projects, operating models, and process improvement.</p><div class="match"><strong>PM overlap:</strong> ambiguity management, structured problem solving, stakeholder alignment, execution.</div></div>
+      <div class="role"><div class="roletop"><h3>Revenue Operations (RevOps)</h3><span class="tag">Go-to-Market</span></div><p>Improves the systems, data, processes, planning, and handoffs across Sales, Marketing, and Customer teams.</p><div class="match"><strong>PM overlap:</strong> systems thinking, process improvement, data, governance, cross-functional dependencies.</div></div>
+      <div class="role"><div class="roletop"><h3>Product Operations</h3><span class="tag">Product</span></div><p>Helps Product teams scale planning, feedback loops, launches, prioritization, and collaboration across functions.</p><div class="match"><strong>PM overlap:</strong> prioritization, facilitation, roadmaps, launch coordination, stakeholder communication.</div></div>
+      <div class="role"><div class="roletop"><h3>Customer Success Operations</h3><span class="tag">Customer</span></div><p>Designs and improves customer lifecycle processes, segmentation, systems, capacity models, reporting, and team effectiveness.</p><div class="match"><strong>PM overlap:</strong> process mapping, change management, metrics, cross-functional execution.</div></div>
+      <div class="role"><div class="roletop"><h3>Implementation Manager</h3><span class="tag">Delivery</span></div><p>Owns complex customer or internal implementations, migrations, onboarding, readiness, and adoption.</p><div class="match"><strong>PM overlap:</strong> scope, milestones, risk, customer communication, dependency management.</div></div>
+      <div class="role"><div class="roletop"><h3>Change Manager</h3><span class="tag">Adoption</span></div><p>Focuses on the people side of change: stakeholder readiness, communication, training, resistance, and sustained adoption.</p><div class="match"><strong>PM overlap:</strong> stakeholder analysis, communication, risk, adoption, change planning.</div></div>
+      <div class="role"><div class="roletop"><h3>Strategy & Operations</h3><span class="tag">Strategy</span></div><p>Connects strategy to execution through analysis, planning, operating models, special initiatives, and leadership support.</p><div class="match"><strong>PM overlap:</strong> business acumen, executive communication, systems thinking, program leadership.</div></div>
+      <div class="role"><div class="roletop"><h3>Chief of Staff</h3><span class="tag">Leadership</span></div><p>Helps a leader or executive team drive priorities, decisions, alignment, operating rhythm, and cross-functional follow-through.</p><div class="match"><strong>PM overlap:</strong> executive communication, prioritization, influence, decision enablement, strategic execution.</div></div>
+      <div class="role"><div class="roletop"><h3>Process / Continuous Improvement</h3><span class="tag">Systems</span></div><p>Diagnoses inefficient processes and redesigns workflows to improve speed, quality, cost, or reliability.</p><div class="match"><strong>PM overlap:</strong> facilitation, root-cause analysis, process mapping, implementation, measurement.</div></div>
+    </div>
+
+    <div class="fitmap">
+      <div class="fit"><h3>If you enjoy structure, delivery, and getting things across the finish line</h3><ul><li>Project Management</li><li>Implementation</li><li>Operations Management</li><li>Process Improvement</li></ul></div>
+      <div class="fit"><h3>If you enjoy systems, dependencies, and connecting teams</h3><ul><li>Program Management</li><li>Business Operations</li><li>RevOps</li><li>Product Ops</li><li>Customer Success Ops</li></ul></div>
+      <div class="fit"><h3>If you enjoy ambiguity, strategy, and senior stakeholder influence</h3><ul><li>Strategy & Operations</li><li>Chief of Staff</li><li>Change Leadership</li><li>Senior Program / Portfolio Leadership</li></ul></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="wrap">
+    <div class="panel" style="background:#f8f7ff;border-color:#ddd8ff">
+      <span class="eyebrow">PMI-aligned perspective</span>
+      <h3 style="margin:0 0 8px">Project success is broader than “on time and on budget.”</h3>
+      <p style="margin:0;color:var(--muted)">
+        Modern project management still requires disciplined management of scope, schedule, resources, quality, stakeholders, and risk. But those controls support a larger purpose: delivering meaningful stakeholder value (what customers, teams, sponsors, or the business actually gain) and the intended outcomes. Program management extends that view by coordinating related projects and other work to achieve benefits that would not be available if each effort were managed independently.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>Your title is only one expression of the skills you are building.</h2>
+    <p>Learn to describe your impact, the complexity you can handle, the stakeholders you can influence, and the decisions you can enable. Those capabilities travel with you across functions, industries, and job titles.</p>
+    <div class="panel bridge" style="background:#f8f7ff;border-color:#ddd8ff">
+      <span class="eyebrow">From capability to leverage</span>
+      <h3>Bring the same skills into the way you work with AI.</h3>
+      <p>The capabilities that make you effective in project and program work (planning, judgment, communication, systems thinking, and decision enablement) also shape how effectively you use AI. Think of it as leverage for the work, not a substitute for your judgment.</p>
+    </div>
+  </div>
+</section>
+
+<section id="ai" class="ai">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow" style="color:#aaa0ff">5 · Use AI as leverage</span>
+        <h2>You do not need to be an AI expert. You need to know how to work with it.</h2>
+      </div>
+      <p>AI can help you organize information, surface risks and dependencies, prepare for stakeholder conversations, sharpen decisions, and communicate clearly. You do not need special language or perfect prompts, and you still own the final answer.</p>
+    </div>
+
+    <div class="panel" style="background:#1c2230;border-color:#2d3547;color:#fff;margin-bottom:20px">
+      <h3 style="margin:0 0 8px">Start here: talk to AI like you would talk to a smart coworker</h3>
+      <p style="margin:0;color:#cbd2dc">
+        You do not need special language. Explain the situation, what you are trying to accomplish,
+        what matters, and what kind of help you want. Then keep the conversation going.
+      </p>
+    </div>
+
+    <div class="formula">
+      <strong>A simple starting formula</strong>
+      <div class="steps">
+        <div class="step">Context</div>
+        <div class="step">Goal</div>
+        <div class="step">Constraints</div>
+        <div class="step">Ask</div>
+      </div>
+      <div class="prompt">Here is what is happening...
+Here is what I need to accomplish...
+Here is what you need to account for...
+Help me think through / create / review...</div>
+    </div>
+
+    <h3 style="margin:30px 0 14px">What this looks like on the job</h3>
+    <div class="aigrid two">
+      <div class="aicard">
+        <h3>Build a project plan</h3>
+        <p><strong>Try:</strong> “I need to plan this project. Before building the timeline, ask me the questions I need to answer about scope, stakeholders, dependencies, risks, and success.”</p>
+      </div>
+      <div class="aicard">
+        <h3>Turn notes into action</h3>
+        <p><strong>Try:</strong> “Here are my meeting notes. Separate them into decisions, actions, owners, risks, open questions, and follow-ups.”</p>
+      </div>
+      <div class="aicard">
+        <h3>Make writing clearer</h3>
+        <p><strong>Try:</strong> “Rewrite this for a busy executive. Keep the meaning, remove jargon, and make the decision or action needed obvious.”</p>
+      </div>
+      <div class="aicard">
+        <h3>Learn something unfamiliar</h3>
+        <p><strong>Try:</strong> “Explain this concept in plain language. Then give me an example in a project-management context and tell me what I actually need to remember.”</p>
+      </div>
+
+    </div>
+
+    <h3 style="margin:30px 0 14px">You do not have to know the perfect correction</h3>
+    <div class="panel" style="background:#171c27;border-color:#2d3547;color:#fff">
+      <p style="margin:0 0 14px;color:#cbd2dc">
+        Your reaction is useful information. If the answer feels wrong, say so. Simple feedback often works better than starting over.
+      </p>
+      <div class="core" style="grid-template-columns:repeat(3,1fr)">
+        <div style="background:#222938;border-color:#333c50"><strong>“This is too complicated.”</strong><span>Ask for a simpler explanation or fewer steps.</span></div>
+        <div style="background:#222938;border-color:#333c50"><strong>“You are making assumptions.”</strong><span>Ask it to identify assumptions and separate facts from guesses.</span></div>
+        <div style="background:#222938;border-color:#333c50"><strong>“This is too tactical.”</strong><span>Ask it to raise the altitude and focus on outcomes or decisions.</span></div>
+        <div style="background:#222938;border-color:#333c50"><strong>“That would not work here.”</strong><span>Explain the constraint or stakeholder reality it missed.</span></div>
+        <div style="background:#222938;border-color:#333c50"><strong>“Give me another approach.”</strong><span>Ask for alternatives and tradeoffs instead of one answer.</span></div>
+        <div style="background:#222938;border-color:#333c50"><strong>“What am I missing?”</strong><span>Use AI to surface gaps, risks, dependencies, and unanswered questions.</span></div>
+      </div>
+    </div>
+
+    <h3 style="margin:30px 0 14px">Use AI for the parts of work it is especially good at</h3>
+    <div class="capgrid">
+      <div class="aicard"><h3>Organizing messy information</h3><p>Summarize notes, group themes, compare documents, extract actions, and identify contradictions.</p></div>
+      <div class="aicard"><h3>Generating a strong first pass</h3><p>Create outlines, plans, drafts, questions, frameworks, or options so you are not starting from a blank page.</p></div>
+      <div class="aicard"><h3>Pressure-testing your thinking</h3><p>Ask for risks, assumptions, counterarguments, missing stakeholders, dependencies, and alternative paths.</p></div>
+      <div class="aicard"><h3>Changing the level of communication</h3><p>Translate technical detail into executive language, simplify jargon, or expand a vague idea into something actionable.</p></div>
+      <div class="aicard"><h3>Learning faster</h3><p>Explain unfamiliar concepts, tools, roles, industries, or acronyms without making you feel like you should already know them.</p></div>
+      <div class="aicard"><h3>Practicing before the real conversation</h3><p>Role-play a stakeholder, interview, difficult conversation, presentation, or executive question-and-answer session.</p></div>
+    </div>
+
+    <h3 style="margin:30px 0 14px">Where your judgment matters most</h3>
+    <div class="compare" style="border-color:#2d3547;background:#1b202c">
+      <table style="color:#fff">
+        <thead>
+          <tr>
+            <th style="background:#202635;color:#cbd2dc">AI can help with</th>
+            <th style="background:#202635;color:#cbd2dc">You still own</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Drafting a recommendation</td><td>Whether the recommendation fits the real business context</td></tr>
+          <tr><td>Identifying possible risks</td><td>Which risks are credible, material, and worth escalating</td></tr>
+          <tr><td>Summarizing stakeholder feedback</td><td>Understanding the relationships, politics, and subtext behind it</td></tr>
+          <tr><td>Suggesting a project plan</td><td>Validating scope, owners, sequencing, resources, and feasibility</td></tr>
+          <tr><td>Writing an executive update</td><td>Ensuring the facts are correct and the message reflects reality</td></tr>
+          <tr><td>Explaining a topic</td><td>Checking important facts and deciding what applies to your situation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin:30px 0 14px">Three habits that make AI dramatically more useful</h3>
+    <div class="aigrid">
+      <div class="aicard">
+        <h3>1. Give it the source material</h3>
+        <p>Do not make the model guess when you have notes, a project plan, policy, stakeholder feedback, or a job description available.</p>
+      </div>
+      <div class="aicard">
+        <h3>2. Ask it to separate facts from assumptions</h3>
+        <p>Especially when the answer includes recommendations, numbers, timelines, owners, or claims you did not provide.</p>
+      </div>
+      <div class="aicard">
+        <h3>3. Iterate instead of restarting</h3>
+        <p>Most strong outputs come from a conversation: draft → react → challenge → simplify → refine.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:30px 0 6px">Extended examples: exploring your next role</h3>
+    <p style="margin:0 0 14px;color:#bcc4d1">The same habits work when you are weighing a job or preparing to interview for one.</p>
+    <div class="aigrid two">
+      <div class="aicard">
+        <h3>Understand a role</h3>
+        <p><strong>Try:</strong> “I’m considering this job. Explain what this role is really responsible for, what skills it requires, and which parts of my background are most relevant.”</p>
+      </div>
+      <div class="aicard">
+        <h3>Prepare for an interview</h3>
+        <p><strong>Try:</strong> “Here is the job description and my experience. What questions am I likely to get, and what examples should I prepare?”</p>
+      </div>
+    </div>
+
+
+    <div class="panel" style="margin-top:20px;background:#fef3c7;border-color:#f3d48a;color:#3b3020">
+      <h3 style="margin:0 0 8px">A practical caution</h3>
+      <p style="margin:0">
+        AI can sound confident when it is wrong. Do not treat confidence as accuracy. Verify important facts,
+        numbers, policies, legal or financial information, and anything that could materially affect a person or business decision.
+        Also be thoughtful about what confidential or sensitive information you put into any AI tool.
+      </p>
+    </div>
+
+    <div class="panel" style="margin-top:20px;background:#ffffff;color:#202431">
+      <h3 style="margin:0 0 10px">If you remember only one thing</h3>
+      <p style="margin:0;font-size:1.05rem">
+        <strong>You do not need to become good at prompting. Become good at explaining the problem, reacting to the answer, and using your own judgment.</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">Career guide for project professionals · Adapted from project and program management frameworks, practices, and career guidance developed by <strong>Elle Henderson</strong> · <a href="https://www.linkedin.com/in/elle-taylor-henderson/">LinkedIn</a></div></footer>
+</body>
+</html>
